@@ -1,0 +1,80 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+body{
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.sidebar {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  bottom: 0; 
+  width: 150px; 
+  background-color: grey; 
+  overflow-x: hidden; 
+  overflow-y: auto; 
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); 
+  z-index: 1000; 
+}
+
+/* Style for sidebar links */
+.sidebar a {
+  padding: 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+}
+
+.sidebar a:hover {
+  background-color: #575757;
+}
+.nav-link {
+  display: block; /* Make links fill the container */
+  text-align: left; /* Align text to the left */
+  padding: 16px; /* Add some padding inside the buttons */
+  text-decoration: none; /* Remove underline from links */
+  color: white; /* Light text color for contrast */
+  background-color: transparent; /* Slightly lighter bg color than sidebar for buttons */
+  margin: 8px; /* Add some margin to space out buttons */
+  border-radius: 4px; /* Rounded corners for button-like appearance */
+  transition: background-color 0.3s; /* Smooth background color transition on hover */
+}
+.nav-link:hover {
+  background-color: #b6b2e2; /* Lighter background on hover */
+}
+
+.nav-link.active {
+  background-color: #666;
+  color: #fff;
+}
+@media screen and (max-width: 600px) {
+  .sidebar {
+    width: 100px;
+  }
+
+  .nav-link {
+    padding: 10px;
+    margin: 4px;
+    text-align: center;
+  }
+}
+.title{
+  font-size: 6rem;
+  font-weight: 50;
+  margin-bottom: 1rem;
+}
+
+
+
