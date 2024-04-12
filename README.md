@@ -21,7 +21,7 @@ The following **required** functionality is completed:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='[https://jmp.sh/s/Nbbf2WyBRuX1ryGVNZ5s](https://pouch.jumpshare.com/preview/JpwkARfyF1KXc6VTMBqTfE-Zzs5_AE55zGQHKqGKEE8j19uDbfF7c_x43Ci_jwasY0Q-Zxcg8zX2vDmFvHhQnl4H8Du2bLXKWn_-3GZn9hU)' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://pouch.jumpshare.com/preview/JpwkARfyF1KXc6VTMBqTfE-Zzs5_AE55zGQHKqGKEE8j19uDbfF7c_x43Ci_jwasY0Q-Zxcg8zX2vDmFvHhQnl4H8Du2bLXKWn_-3GZn9hU' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
