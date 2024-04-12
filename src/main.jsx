@@ -6,6 +6,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Profile from './Profile.jsx';
 import Gallery from './Gallery.jsx';
 import Navbar from './NavBar.jsx';
+import Crewmate from './Crewmate.jsx';
+// import crew
 
 
 
@@ -18,6 +20,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/" element={<App />} />
         <Route path="/Profile" element={<Profile />} />
         <Route path="/Gallery" element={<Gallery />} />
+        <Route path="/Crewmate" element={<Crewmate />} />
       </Routes>
     </Router>
   </React.StrictMode>,

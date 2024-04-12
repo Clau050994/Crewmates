@@ -1,86 +1,55 @@
-
 .card {
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 16px;
-    margin: 8px;
-    width: 200px; 
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  }
-  
-  .card-image img {
-    width: 100%; 
-    height: auto; 
-    border-bottom: 1px solid #ccc;
-  }
-  
-  .card-content {
-    margin-top: 8px;
-  }
-  
-  .edit-button {
-    background-color: #007bff;
+    background: #333; /* Card background color */
+    color: #fff; /* Text color */
+    border: none; /* Remove border if not needed */
+    border-radius: 10px; /* More pronounced rounded corners */
+    padding: 20px;
+    margin: 16px; /* Adjust margin to ensure space between cards */
+    width: calc(30% - 32px); /* Adjust width calculation for margin */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distributes space evenly inside card */
+}
+
+.card-image img {
+    border-radius: 10px; /* Rounded corners for image */
+    border-bottom: none; /* Remove border below image if not needed */
+    margin-bottom: 20px; /* Space between image and text */
+}
+
+.card-content h3, .card-content p {
+    margin-bottom: 10px; /* Space between text elements */
+}
+
+.edit-button {
+    background-color: #007bff; /* Button background color */
     color: white;
     border: none;
     padding: 10px 20px;
-    margin-top: 10px;
+    margin-top: auto; /* Push button to bottom of card */
     cursor: pointer;
     border-radius: 4px;
-  }
-  
+}
 
-  .sidebar {
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    bottom: 0; 
-    width: 150px; 
-    background-color: grey; 
-    overflow-x: hidden; 
-    overflow-y: auto; 
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); 
-    z-index: 1000; 
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Aligns cards horizontally in the center */
+    align-items: flex-start; /* Aligns cards vertically from the top */
+    gap: 16px; /* Adds space between the cards */
+    padding: 16px; /* Adds padding around the entire container */
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 32px); /* Two-column layout on smaller screens */
   }
-  
-  /* Style for sidebar links */
-  .sidebar a {
-    padding: 16px;
-    text-decoration: none;
-    font-size: 18px;
-    color: white;
-    display: block;
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: calc(100% - 32px); /* Single column layout on very small screens */
   }
-  
-  .sidebar a:hover {
-    background-color: #575757;
-  }
-  .nav-link {
-    display: block; /* Make links fill the container */
-    text-align: left; /* Align text to the left */
-    padding: 16px; /* Add some padding inside the buttons */
-    text-decoration: none; /* Remove underline from links */
-    color: white; /* Light text color for contrast */
-    background-color: transparent; /* Slightly lighter bg color than sidebar for buttons */
-    margin: 8px; /* Add some margin to space out buttons */
-    border-radius: 4px; /* Rounded corners for button-like appearance */
-    transition: background-color 0.3s; /* Smooth background color transition on hover */
-  }
-  .nav-link:hover {
-    background-color: #b6b2e2; /* Lighter background on hover */
-  }
-  
-  .nav-link.active {
-    background-color: #666;
-    color: #fff;
-  }
-  @media screen and (max-width: 600px) {
-    .sidebar {
-      width: 100px;
-    }
-  
-    .nav-link {
-      padding: 10px;
-      margin: 4px;
-      text-align: center;
-    }
 }

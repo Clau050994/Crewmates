@@ -1,13 +1,9 @@
 .sidebar {
     position: fixed; 
-    top: 0; 
-    left: 0; 
-    bottom: 0; 
-    width: 150px; 
+    width: 100px; 
     background-color: grey; 
     overflow-x: hidden; 
     overflow-y: auto; 
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); 
     z-index: 1000; 
   }
   

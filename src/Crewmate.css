@@ -1,0 +1,73 @@
+.container {
+    flex-direction: column; /* Align children in a column */
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Center children vertically */
+    width: 100%;
+    height: 100vh;
+  }
+
+  
+  h1 {
+    margin-bottom: 1rem;
+    color: #00bfff; /* Styling the title color */
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #00bfff; /* Light blue color for labels */
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #222; /* Darker background for inputs */
+    color: white; /* White color for input text */
+  }
+  
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  .radio-group label {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  button {
+    background-color: #00bfff; /* Light blue color for buttons */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0099cc; /* Darker shade for hover state */
+  }
+  
+  button[type="reset"] {
+    background-color: #ff6347; /* Red color for delete button */
+  }
+  
+  button[type="reset"]:hover {
+    background-color: #e53e30; /* Darker shade for hover state */
+  }
+  
+  /* Add responsiveness */
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+    }
+  }
+  
